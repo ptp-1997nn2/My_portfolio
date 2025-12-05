@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #333; 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+/* --- ANIMATIONS CHUNG --- */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+
+/* --- MARQUEE ANIMATION (Chữ chạy) --- */
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.marquee-content {
+    animation: marquee 20s linear infinite;
+}
+
+/* --- 3D TILT CARD EFFECT --- */
+.tilt-card-wrap {
+    perspective: 1000px; /* Tạo chiều sâu 3D */
+    transform-style: preserve-3d;
+}
+
+.tilt-card {
+    transition: transform 0.1s ease-out; /* Chuyển động mượt mà theo chuột */
+    will-change: transform;
+    transform-style: preserve-3d;
+}
+
+/* Hiệu ứng bóng sáng chạy qua */
+@keyframes shine {
+    0% { left: -100%; opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { left: 200%; opacity: 0; }
+}
+.group:hover .animate-shine {
+    animation: shine 1.5s;
+}
+
+/* Skill Bar (Cho trang About) */
+.skill-bar {
+    width: 0%;
+    transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.animate-blob {
+    animation: blob 7s infinite;
+}
+@keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+}

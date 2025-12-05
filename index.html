@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khắc Lập - Product Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="Css/Style.css">
+</head>
+<body class="bg-white text-slate-900 font-sans selection:bg-black selection:text-white">
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 bg-transparent">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tighter flex items-center gap-2">
+                <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white text-sm">D</div>
+                <span>Designer.</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="index.html#work" class="hover:text-black transition-colors">Dự án</a>
+                <a href="index.html#process" class="hover:text-black transition-colors">Quy trình</a>
+                <a href="about.html" class="hover:text-black transition-colors">Giới thiệu</a>
+                <a href="contact.html" class="px-5 py-2.5 bg-black text-white rounded-full hover:bg-slate-800 transition-all transform hover:-translate-y-0.5">
+                    Liên hệ
+                </a>
+            </div>
+
+            <button class="md:hidden" id="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 py-6 px-6 flex flex-col gap-4 shadow-xl">
+            <a href="index.html#work" class="text-lg font-medium text-left py-2">Dự án</a>
+            <a href="index.html#process" class="text-lg font-medium text-left py-2">Quy trình</a>
+            <a href="about.html" class="text-lg font-medium text-left py-2">Giới thiệu</a>
+            <a href="contact.html" class="text-lg font-medium text-left py-2 text-blue-600">Liên hệ ngay</a>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 md:pt-40 md:pb-24 px-6 md:px-12 container mx-auto relative overflow-hidden">
+        <div class="absolute top-0 right-0 -z-10 opacity-50">
+            <div class="w-96 h-96 bg-slate-50 rounded-full blur-3xl filter translate-x-1/2 -translate-y-1/4"></div>
+        </div>
+
+        <div class="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-20">
+            
+            <div class="w-full md:w-1/2">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold mb-6 tracking-wide uppercase">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    Available for new projects
+                </div>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight mb-6">
+                    Thiết kế trải nghiệm số <br />
+                    <span class="text-slate-400">đơn giản & hiệu quả.</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    Xin chào, tôi là <span class="text-black font-bold">Khắc Lập</span>. Tôi giúp các doanh nghiệp biến ý tưởng phức tạp thành giao diện thân thiện với người dùng.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#work" class="px-8 py-4 bg-black text-white rounded-full font-medium text-lg hover:bg-slate-800 transition-all flex items-center gap-2 group">
+                        Xem Portfolio
+                        <i data-lucide="arrow-right" class="group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="about.html" class="px-8 py-4 border border-slate-200 text-slate-900 rounded-full font-medium text-lg hover:bg-slate-50 transition-all">
+                        Về tôi
+                    </a>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 flex justify-center md:justify-end relative">
+                <div class="absolute w-64 h-64 bg-blue-100 rounded-full -z-10 top-10 right-10 blur-xl opacity-60"></div>
+                
+                <div class="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+                    <img 
+                        src="Image/DSC3239-Edit.jpg" 
+                        alt="Khắc Lập Portrait" 
+                        class="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                    >
+                </div>
+                
+                <div class="absolute bottom-4 left-4 md:bottom-10 md:left-10 bg-white p-4 rounded-2xl shadow-lg animate-bounce duration-1000">
+                     <div class="flex items-center gap-3">
+                        <div class="bg-blue-100 p-2 rounded-full text-blue-600">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 font-bold uppercase">Kinh nghiệm</p>
+                            <p class="text-lg font-bold">3+ Năm</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- SELECTED WORK SECTION (Đã nâng cấp) -->
+    <section id="work" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16">
+                <div class="w-full md:w-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-3 md:mb-4">Dự án tiêu biểu</h2>
+                    <p class="text-slate-500 max-w-lg">Một số dự án tôi đã thực hiện gần đây.</p>
+                </div>
+                <a href="#" class="hidden md:flex items-center gap-2 text-sm font-bold underline decoration-2 underline-offset-4 hover:text-slate-600 mt-4 md:mt-0">
+                    Xem tất cả (Behance) <i data-lucide="external-link" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <!-- Grid Layout Mới -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Project 1: Fintech App (Rich Card Style) -->
+                <div class="group relative h-[450px] md:h-[500px] rounded-3xl overflow-hidden cursor-pointer shadow-sm hover:shadow-2xl transition-all duration-500">
+                    <!-- Background Image (Mockup App) -->
+                    <img 
+                        src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
+                        alt="Fintech App UI" 
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    >
+                    
+                    <!-- Gradient Overlay (Để chữ dễ đọc hơn) -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
+
+                    <!-- Content Floating -->
+                    <div class="absolute bottom-0 left-0 w-full p-8 md:p-10 flex flex-col justify-end h-full">
+                        <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <!-- Tags -->
+                            <div class="flex gap-2 mb-4">
+                                <span class="px-3 py-1 bg-white/20 backdrop-blur-md border border-white/20 rounded-full text-xs font-semibold text-white uppercase tracking-wide">Mobile App</span>
+                                <span class="px-3 py-1 bg-white/20 backdrop-blur-md border border-white/20 rounded-full text-xs font-semibold text-white uppercase tracking-wide">UX Research</span>
+                            </div>
+
+                            <!-- Title -->
+                            <h3 class="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight">Fintech E-Wallet</h3>
+                            
+                            <!-- Description (Chỉ hiện khi hover hoặc luôn hiện nhưng mờ) -->
+                            <p class="text-slate-300 text-lg mb-6 line-clamp-2 md:line-clamp-none opacity-90">
+                                Thiết kế lại trải nghiệm chuyển tiền, giúp tăng 25% tỷ lệ giữ chân người dùng thông qua gamification.
+                            </p>
+
+                            <!-- Button -->
+                            <div class="inline-flex items-center gap-2 text-white font-bold border-b border-white pb-1 group-hover:text-blue-400 group-hover:border-blue-400 transition-colors">
+                                Xem Case Study <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Dashboard (Rich Card Style) -->
+                <div class="group relative h-[450px] md:h-[500px] rounded-3xl overflow-hidden cursor-pointer shadow-sm hover:shadow-2xl transition-all duration-500">
+                    <!-- Background Image (Mockup Web) -->
+                    <img 
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
+                        alt="Dashboard UI" 
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    >
+                    
+                    <!-- Gradient Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
+
+                    <!-- Content Floating -->
+                    <div class="absolute bottom-0 left-0 w-full p-8 md:p-10 flex flex-col justify-end h-full">
+                        <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <!-- Tags -->
+                            <div class="flex gap-2 mb-4">
+                                <span class="px-3 py-1 bg-white/20 backdrop-blur-md border border-white/20 rounded-full text-xs font-semibold text-white uppercase tracking-wide">SaaS</span>
+                                <span class="px-3 py-1 bg-white/20 backdrop-blur-md border border-white/20 rounded-full text-xs font-semibold text-white uppercase tracking-wide">Design System</span>
+                            </div>
+
+                            <!-- Title -->
+                            <h3 class="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight">E-Commerce Dashboard</h3>
+                            
+                            <!-- Description -->
+                            <p class="text-slate-300 text-lg mb-6 line-clamp-2 md:line-clamp-none opacity-90">
+                                Hệ thống quản lý đơn hàng tối ưu hóa luồng xử lý dữ liệu lớn cho doanh nghiệp logistic.
+                            </p>
+
+                            <!-- Button -->
+                            <div class="inline-flex items-center gap-2 text-white font-bold border-b border-white pb-1 group-hover:text-purple-400 group-hover:border-purple-400 transition-colors">
+                                Xem Case Study <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-10 text-center md:hidden">
+                <a href="#" class="inline-block px-6 py-3 border border-slate-200 rounded-full font-medium text-sm hover:bg-slate-50">
+                    Xem tất cả dự án
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-24 bg-slate-50 border-y border-slate-200">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="max-w-2xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Quy trình thiết kế</h2>
+                <p class="text-slate-600">Sử dụng tư duy Design Thinking để giải quyết vấn đề.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center text-slate-900 mb-6">
+                        <i data-lucide="search"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">01. Empathize</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Nghiên cứu người dùng và xác định vấn đề cốt lõi.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center text-slate-900 mb-6">
+                        <i data-lucide="lightbulb"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">02. Ideate</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Brainstorming, xây dựng User Flow và Wireframe.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center text-slate-900 mb-6">
+                        <i data-lucide="layers"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">03. Prototype</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Thiết kế High-fidelity UI và tạo Prototype tương tác.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center text-slate-900 mb-6">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">04. Test</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Kiểm thử tính khả dụng và tinh chỉnh sản phẩm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-white text-center border-t border-slate-100">
+        <p class="mb-4 text-slate-500">Thích những gì bạn thấy?</p>
+        <a href="contact.html" class="text-xl font-bold underline decoration-2 hover:text-blue-600">Hãy trò chuyện ngay</a>
+    </footer>
+
+    <script src="Js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
